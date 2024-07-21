@@ -1,0 +1,203 @@
+body {
+    font-family: "Pacifico", cursive;
+    font-optical-sizing: auto;
+    background-image: linear-gradient(to left, #415a77, #1b263b);
+    color: #9eb3c2;
+    margin: 0;  /* Added to remove default body margin */
+    padding: 0;  /* Added to remove default body padding */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 10px;  /* Added to create some padding inside the container */
+}
+
+/* Nav Bar */
+.item1 {
+    grid-column: 1 / span;
+    background-color: #000000;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.link {
+    margin: 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.link:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.link > h1 > a:hover {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #9eb3c2;
+}
+
+.nav-logo {
+    padding-left: 20px;
+    margin: 2px;
+    font-size: 25px;
+}
+
+.nav-logo:hover {
+    text-shadow: 10px 10px 5px gray;
+}
+
+/* About */
+.item2 {
+    padding: 2px;
+    margin: 2px;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 400px;  /* Adjusted size */
+    height: 400px;  /* Adjusted size */
+    display: flex;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid black;
+}
+
+.about {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;  /* Added to prevent overflow */
+}
+
+.info {
+    text-align: center;
+    padding: 0 20px;  /* Adjusted padding */
+    font-size: 18px;
+}
+
+.info p {
+    font-size: 18px;
+}
+
+/* Education */
+.item3 {
+    padding: 2px;
+    margin: 2px;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.edu {
+    text-align: center;
+    border-radius: 25px;
+    max-width: 100%;  /* Added to prevent overflow */
+}
+
+.edu p {
+    font-size: 18px;
+}
+
+/* Skills */
+.item4 {
+    padding: 2px;
+    margin: 2px;
+    grid-column: 1 / -1;
+}
+
+.skills {
+    margin: 5px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;  /* Added to wrap content */
+    justify-content: space-between;
+}
+
+.card {
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    border: 2px solid;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 100%;  /* Added to prevent overflow */
+}
+
+.headingskill {
+    text-align: center;
+    text-decoration-line: underline;
+    letter-spacing: 1pt;
+}
+
+.skills h4 {
+    text-align: left;
+}
+
+/* Projects */
+.item5 {
+    padding: 2px;
+    margin: 2px;
+    grid-column: 1 / -1;
+}
+
+.projects {
+    display: flex; /* Added to wrap content */
+    padding: 20px;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.projects > .card {
+    width: 400px;
+}
+
+.projects > .card > h1 {
+    font-size: 25pt;
+    word-spacing: 5pt;
+}
+
+/* Contact */
+.item6 {
+    padding: 2px;
+    margin: 2px;
+    grid-column: 1 / -1;
+    background-color: #000000;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.img1 {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    background-color: white;
+}
